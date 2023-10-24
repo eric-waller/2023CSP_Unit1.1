@@ -6,8 +6,8 @@ import turtle as trtl
 my_turtles = []
 
 # use interesting shapes and colors
-turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic", "arrow", "turtle", "circle", "square", "triangle", "classic"]
-turtle_colors = ["red", "blue", "green", "orange", "purple", "gold", "red", "blue", "green", "orange", "purple", "gold"]
+turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
+turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 
 for s in turtle_shapes:
   t = trtl.Turtle(shape=s)
@@ -34,8 +34,8 @@ for t in my_turtles:
   t.right(45)
   t.forward(distance)
   direction = t.heading()
-  distance = distance + 5
-  size = size + 1
+  distance = distance
+  size = size
 
 
 
