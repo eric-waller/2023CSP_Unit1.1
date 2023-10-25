@@ -42,10 +42,10 @@ wn.bgpic("maze3.png")
 for step in range(2):
   for step in range(2):
     move()
-    turn_right()
+    for step in range(3):
+      turn_left()
     move()
     turn_left()
   robot.pencolor("red")
-  robot.color("red")
 
 wn.mainloop()
